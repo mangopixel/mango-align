@@ -1,0 +1,17 @@
+{
+  "name": "mango-align",
+  "description": "",
+  "main": "mango-align.directive.js.js",
+  "authors": [
+    "Adrian <adrianhelvik100@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.js"
+  ]
+}
