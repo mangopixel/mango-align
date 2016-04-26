@@ -9,7 +9,7 @@
         return {
             scope: {
                 targetSelector: '@mangoAlign',
-                origin: '@mangoAlign'
+                origin: '@mangoAlignOrigin'
             },
             link: function (scope, el, attrs) {
 
@@ -56,13 +56,10 @@
                 }
 
                 function calcTop() {
-                    var targetTop = rect( target ).top;
-                    var targetHeight = rect( target ).height;
-
-                    var result = targetTop;
+                    var result = rect( target ).top;
 
                     if ( scope.origin === 'bottom' || ! scope.origin )
-                        result += targetHeight;
+                        result += rect( target ).height;
 
                     if ( scope.origin === 'top' )
                         result -= rect( el ).height;
