@@ -1,15 +1,15 @@
 (function () {
 
     angular.module( 'mangoAlign', [] )
-        .directive( 'mangoAlign', mpAlign );
+        .directive( 'mangoAlign', mangoAlign );
 
-    mpAlign.$inject = ['$timeout'];
+    mangoAlign.$inject = ['$timeout'];
 
-    function mpAlign( $timeout ) {
+    function mangoAlign( $timeout ) {
         return {
             scope: {
-                targetSelector: '@mpAlign',
-                origin: '@mpAlignOrigin'
+                targetSelector: '@mangoAlign',
+                origin: '@mangoAlign'
             },
             link: function (scope, el, attrs) {
 
@@ -23,7 +23,7 @@
                     win = angular.element(window);
 
                     if ( ! target.length )
-                        return console.warn( 'mpAlign: Could not find target element with selector:', scope.targetSelector );
+                        return console.warn( 'mangoAlign: Could not find target element with selector:', scope.targetSelector );
 
                     win.on( 'resize scroll', applyStyling );
                     applyStyling()
