@@ -1,7 +1,7 @@
 {
   "name": "mango-align",
   "description": "",
-  "main": "mango-align.directive.js.js",
+  "main": "mango-align.directive.js",
   "authors": [
     "Adrian <adrianhelvik100@gmail.com>"
   ],
